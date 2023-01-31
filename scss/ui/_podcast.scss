@@ -1,0 +1,23 @@
+@use '../base/mixins' as m;
+
+.podcast_grid{
+    align-items: center;
+    @include m.tablet{
+        @include m.grid(2, 1rem);
+    }
+}
+
+.podcast_imagen{
+     width: 400px;
+     margin: 5rem auto;
+     @include m.tablet{
+        margin: 0 auto;
+     }
+}
+
+.podcast_descripcion{
+    text-align: center;
+    @include m.tablet{
+        text-align: start;
+    }
+}
