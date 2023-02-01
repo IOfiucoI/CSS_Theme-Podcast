@@ -1,9 +1,14 @@
 @use '../base/mixins' as m;
+@use '../base/variables' as v;
 
 .podcast_grid{
     align-items: center;
     @include m.tablet{
         @include m.grid(2, 1rem);
+    }
+
+    h2{
+        @include m.heading(v.$secundario, v.$primario);
     }
 }
 
