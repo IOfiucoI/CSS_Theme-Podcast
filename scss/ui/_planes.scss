@@ -2,13 +2,16 @@
 @use '../base/variables' as v;
 
 .planes {
+
     background-color: v.$secundario;
 
     h2 {
+        margin: 0;
         @include m.heading(v.$blanco, v.$primario);
     }
 
     .descripcion {
+        margin: .5rem;
         color: v.$blanco;
     }
 }
@@ -17,11 +20,13 @@
     display: flex;
     flex-direction: column;
 
+
     @include m.tablet {
         flex-direction: row;
         max-width: 80rem;
         margin-inline: auto;
         margin-block-start: 10rem;
+        margin-bottom: 4rem ;
     }
 }
 

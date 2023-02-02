@@ -1,0 +1,56 @@
+@use '../base/mixins' as m;
+@use '../base/variables' as v;
+
+footer {
+    background-color: v.$secundario;
+}
+
+.footer-grid {
+    @include m.tablet {
+        @include m.grid (4, 2rem);
+    }
+}
+
+.logo {
+    width: 190px;
+    margin: auto auto;
+}
+
+.listado {
+    margin: 4rem 0;
+    text-align: center;
+
+    h2 {
+
+        font-size: 2rem;
+        color: v.$primario;
+
+        @include m.tablet {
+            text-align: left;
+        }
+    }
+
+    ul {
+        color: v.$blanco;
+        line-height: .75;
+
+        li {
+            @include m.tablet {
+                text-align: left;
+            }
+        }
+
+    }
+
+}
+
+.copy {
+
+    border-top: .1rem solid v.$primario;
+
+    .texto {
+        text-align: center;
+        color: v.$blanco;
+    }
+
+}
