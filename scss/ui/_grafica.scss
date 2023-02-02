@@ -1,0 +1,10 @@
+@use '../base/mixins' as m;
+@use '../base/variables' as v;
+
+.grafica {
+    text-align: center;
+
+    h2 {
+        @include m.heading(v.$secundario, v.$primario);
+    }
+}

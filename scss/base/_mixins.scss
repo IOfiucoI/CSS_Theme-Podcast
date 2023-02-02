@@ -40,7 +40,7 @@
 
     &:hover {
         cursor: pointer;
-        background-color: darken($color, 10);
+        background-color: darken($color, 5);
     }
 
     @include tablet {
@@ -75,4 +75,12 @@
         display: block;
         margin: -1.4rem 0 0 0;
     }
+}
+
+@mixin icono($url){
+    background-image: url($url);
+    background-position: 50% 2rem;
+    background-size: 10rem;
+    background-repeat: no-repeat;
+
 }

@@ -4,3 +4,13 @@
 .boton-primario{
     @include m.boton(v.$primario, v.$blanco)
 }
+
+// .boton-plan{
+//     @extend .boton-primario;
+//     border: 1rem solid #fff;
+// }
+
+.boton-oferta{
+    background-color: v.$blanco;
+    color: v.$primario;
+}
